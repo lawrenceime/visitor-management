@@ -1,0 +1,330 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-nav {
+  width: full;
+  height: 4rem;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#home-heading {
+  color: darkblue;
+}
+
+.contact-heading {
+  margin-left: 50px;
+
+  text-align: center;
+}
+
+.bar {
+  width: 98%;
+  height: 6rem;
+  /* border: 2px solid black; */
+  background-color: rgba(12, 211, 211, 0.061);
+  margin: 2rem auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.total-visits {
+  display: flex;
+  flex-direction: row;
+  border: solid darkblue;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 80px;
+  background-color: #b8b5bd;
+  gap: 10px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  border: solid gold;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 80px;
+  background-color: rgba(255, 217, 0, 0.361);
+  gap: 10px;
+}
+
+.approved-bar {
+  display: flex;
+  flex-direction: row;
+  border: solid brown;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 80px;
+  background-color: rgb(227, 145, 145);
+  gap: 10px;
+}
+
+.rejected-bar {
+  display: flex;
+  flex-direction: row;
+  border: solid green;
+  border-radius: 8px;
+  max-width: 80%;
+  height: 80px;
+  background-color: rgb(184, 215, 184);
+  gap: 10px;
+}
+
+.rate {
+  display: flex;
+  border: 3px solid rgb(26, 145, 26);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 10px 15px;
+}
+
+.visit-number {
+  margin: 0 auto;
+  /* font-size: 1rem; */
+  font: 900;
+  color: rgb(38, 38, 157);
+}
+
+.bar-total-visits {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+
+.bar-number {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 740px) {
+  .bar {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total-visits {
+    width: 90%;
+  }
+
+  .progress-bar {
+    width: 90%;
+  }
+
+  .approved-bar {
+    width: 90%;
+  }
+
+  .rejected-bar {
+    width: 90%;
+  }
+
+
+}
+
+#upcoming-header{
+    color: gold;
+}
+
+@media screen and (max-width:740px) {
+    #upcoming-header{
+       text-align: center;
+    }
+}
+
+.upcoming-bar{
+    width: 98%;
+    height: 6rem;
+    background-color: rgba(114, 206, 206, 0.061);
+    margin: 2rem auto 0px auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+    gap: 30px;
+}
+
+.upcoming-bar-items{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 90%;
+ 
+}
+
+.upcoming-bar-items h4{
+    margin: 0px 0px;
+    padding: 2px 2px;
+}
+
+.upcoming-bar-items p{
+    margin: 0px 0px;
+    padding: 5px 5px;
+   
+}
+
+.btn{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+.btn-first{
+ border-radius: 8px;
+ background-color: red;
+ color: white;
+}
+
+.btn-second{
+ border-radius: 8px;
+ background-color: green;
+ color: white;
+}
+
+@media screen and (max-width:740px) {
+   .upcoming-bar{
+    width: 90%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+   }
+
+ 
+
+   .upcoming-bar-items{
+    width: 80%;
+    margin-top: 20px;
+ 
+}
+
+.upcoming-bar-items h4{
+  
+    margin-top: 15px;
+ 
+}
+
+.btn{
+    margin-bottom: 10px;
+}
+
+}
+
+#active-visitors{
+    color: darkred;
+}
+
+.active-bar-items{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 90%;
+ 
+}
+
+.active-bar-items h4{
+    margin: 0px 0px;
+    padding: 2px 2px;
+}
+
+.active-bar-items p{
+    margin: 0px 0px;
+    padding: 5px 10px 0px 5px;
+   
+}
+
+.labels{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 70px;
+}
+
+.confirmed-label{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid darkred;
+    width: 70%;
+    border-radius: 8px;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+}
+
+
+.label-rounded{
+    border-radius: 100px;
+    width: 10px;
+    height:10px;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.confirmed-label p{
+    padding: 5px;
+}
+
+#unactive-visitors{
+    color: green;
+}
+
+/* Your existing CSS styles */
+
+/* Add this CSS for footer positioning */
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(3, 109, 109, 0.474); /* Add background color for better visibility */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+   
+  }
+  
+ img{
+  width: 40px;
+  height: 40px;
+  gap: 30px;
+  cursor: pointer;
+  
+
+}
+
+img:hover{
+  background: rgba(47, 172, 172, 0.474);
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  
+}
+
+ 
+
+
+
